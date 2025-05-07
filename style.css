@@ -124,6 +124,9 @@ main h1 {
   background: #f8f9fa;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow-wrap: break-word; /* Ensures long text wraps within the container */
+  word-wrap: break-word; /* For older browsers */
+  word-break: break-word; /* Breaks long words */
 }
 
 #result-section h2 {
@@ -136,6 +139,8 @@ main h1 {
   font-size: 1.2rem;
   color: #555;
   font-weight: bold;
+  margin-top: 1rem;
+  overflow-wrap: break-word; /* Ensures long text wraps within the container */
 }
 
 /* Footer */

@@ -9,7 +9,7 @@ document.getElementById('email-form').addEventListener('submit', async (e) => {
   const resultMessage = document.getElementById('result-message');
 
   const apiKey = '2a53688d9dbbcb7f9c5c31bc239030c8'; // Replace with your API key
-  const apiUrl = `http://apilayer.net/api/check?access_key=${apiKey}&email=${email}&smtp=1&format=1`;
+  const apiUrl = `https://apilayer.net/api/check?access_key=${apiKey}&email=${email}&smtp=1&format=1`;
 
   try {
     const response = await fetch(apiUrl);
