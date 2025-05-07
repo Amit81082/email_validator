@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validator for your business</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fas fa-envelope"></i>
+          <!-- Email icon -->
+        </div>
+        <span class="menu-toggle">&#9776;</span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Enter your email to validate</h1>
+      <form id="email-form">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+        <br />
+        <input type="submit" value="Validate Email" />
+      </form>
+
+      <!-- Result Section -->
+      <div id="result-section" style="margin-top: 20px; text-align: center">
+        <h2>Validation Result</h2>
+        <p id="result-message">
+          Your result will appear here after submission.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Email-validate. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

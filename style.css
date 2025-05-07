@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Main Section */
+main {
+  min-height: 90vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f9f9f9, #e9ecef);
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Email Form */
+#email-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#email-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#email-form input[type="email"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#email-form input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#email-form input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#email-form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+}
+
+/* Result Section */
+#result-section {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#result-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#result-message {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer-content {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #email-form {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  #result-section {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  #email-form input[type="email"],
+  #email-form input[type="submit"] {
+    font-size: 0.9rem;
+  }
+
+  #result-section h2 {
+    font-size: 1.5rem;
+  }
+
+  #result-message {
+    font-size: 1rem;
+  }
+}
