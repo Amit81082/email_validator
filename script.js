@@ -11,6 +11,7 @@ document.getElementById('email-form').addEventListener('submit', async (e) => {
   const apiKey = '2a53688d9dbbcb7f9c5c31bc239030c8'; // Replace with your API key
   const apiUrl = `https://apilayer.net/api/check?access_key=${apiKey}&email=${email}&smtp=1&format=1`;
 
+
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
